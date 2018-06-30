@@ -3,3 +3,6 @@ fadein out etc
 
 http://css3.bradshawenterprises.com/cfimg/#cfimg3
 
+browser specific css
+https://code.tutsplus.com/tutorials/quick-tip-how-to-target-ie6-ie7-and-ie8-uniquely-with-4-characters--net-10575
+
