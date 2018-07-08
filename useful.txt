@@ -12,3 +12,6 @@ https://www.youtube.com/watch?v=As81w3Fiyr4&list=PLpg00ti3ApRzqcNvfyoXPbi8lNDmDH
 unminify
 https://unminify.com
 
+css attributes selectors - great article
+https://css-tricks.com/attribute-selectors/
+
