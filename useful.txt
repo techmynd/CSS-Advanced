@@ -1,3 +1,9 @@
+Tools List
+==========
+http://codingheroes.io/resources/
+
+
+
 keyframe animations - ALL CSS
 fadein out etc
 
@@ -14,4 +20,31 @@ https://unminify.com
 
 css attributes selectors - great article
 https://css-tricks.com/attribute-selectors/
+
+
+
+emmet cheat sheet
+==================
+https://docs.emmet.io/cheat-sheet/
+
+html and canvas cheat sheet
+===========================
+https://websitesetup.org/html5-cheat-sheet/
+
+visual studio extensions
+========================
+Auto Close Tag to automatically close HTML tags.
+Auto Rename Tag to automatically change matching HTML tags.
+Color Highlight to, as the name says, highlight colors in CSS.
+Paste and Indent to automatically indent pasted code.
+Path Intellisense to autocomplete filenames.
+Prettier to automatically format code.
+
+
+visual studio code setting
+==========================
+ "files.autoSave": "onFocusChange",
+"editor.fontSize": 16,
+
+
 

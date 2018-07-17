@@ -1,0 +1,249 @@
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+
+target every single element on the page
+=========================================
+* {
+ margin: 0;
+ padding: 0;
+}
+
+
+child select every element
+===========================
+
+#container * {
+ border: 1px solid black;
+}
+
+
+all links and their visited state
+================================
+a:link { color: red; }
+a:visted { color: purple; }
+
+
+X[title]
+attributes selector
+========
+a[title] {
+   color: green;
+}
+
+
+X[href="foo"]
+attribute with specific value selector
+========================================
+a[href="http://net.tutsplus.com"] {
+  color: #1f6053; /* nettuts green */
+}
+
+
+attribuite specific selector
+============================
+a[href*="tuts"] {
+  color: #1f6053; /* nettuts green */
+}
+
+
+X[href^="http"]
+external link selector
+===============
+a[href^="http"] {
+   background: url(path/to/external/icon.png) no-repeat;
+   padding-left: 10px;
+}
+
+
+
+X[href$=".jpg"]
+all anchor links with image
+===========================
+a[href$=".jpg"] {
+   color: red;
+}
+
+
+X[data-*="foo"]
+all anchore with all these image types
+==================
+a[href$=".jpg"],
+a[href$=".jpeg"],
+a[href$=".png"],
+a[href$=".gif"] {
+   color: red;
+}
+
+X[foo~="bar"]
+space seperated attribute selector
+===================================
+a[data-info~="external"] {
+   color: red;
+}
+<a href="path/to/image.jpg" data-info="external image"> Click Me, Fool </a>
+
+
+
+
+X + Y
+======
+only nearby element selector
+adjacent selector
+element that is immediately preceded by the former element
+=============================
+ul + p {
+   color: red;
+}
+
+
+
+X ~ Y
+sibling selector
+all p elements that are after and in ul
+========================================
+ul ~ p {
+   color: red;
+}
+
+
+
+
+
+
+
+x > y
+=====
+only select direct children
+
+div#container > ul {
+  border: 1px solid black;
+}
+
+
+
+X:checked
+checked
+===========
+input[type=radio]:checked {
+   border: 1px solid black;
+}
+
+
+
+
+
+
+
+X:after
+X:before
+X:hover
+========
+.clearfix:after {}
+
+
+
+
+
+
+
+
+
+
+X:not(selector)
+not selector
+====================
+div:not(#container) {
+   color: blue;
+}
+
+
+*:not(p) {
+  color: green;
+}
+
+
+
+
+X::pseudoElement
+=================
+p::first-line {
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+
+
+X:nth-last-child(n)
+nth to the last item
+========================
+li:nth-last-child(2) {
+   color: red;
+}
+
+
+X:nth-child(n)
+==============
+li:nth-child(3) {
+   color: red;
+}
+
+
+
+
+X:nth-of-type(n)
+select according to the type of element.
+third ul type select from all uls in all elements
+=================================
+ul:nth-of-type(3) {
+   border: 1px solid black;
+}
+
+
+
+X:nth-last-of-type(n)
+=====================
+ul:nth-last-of-type(3) {
+   border: 1px solid black;
+}
+
+
+
+
+
+X:first-child
+===============
+ul li:first-child {
+   border-top: none;
+}
+
+
+
+
+X:last-child
+==============
+ul > li:last-child {
+   color: green;
+}
+
+
+
+X:only-child
+==============
+div p:only-child {
+   color: red;
+}
+
+
+
+X:only-of-type
+==================
+li:only-of-type {
+   font-weight: bold;
+}
+
+
+
+X:first-of-type
+The first-of-type pseudo class allows you to select the first siblings of its type.
+
+
