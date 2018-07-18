@@ -1,0 +1,27 @@
+@keyframes fadeInFromLeft {
+  /*start animation ** starting point*/
+  /*0% time frame - 80% time frame & 100% time frame*/
+  0% {
+    opacity:0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  /*end animation*/
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+
+}
+
+
+
+
+fadeInFromLeft is animation name 
+0% startiung point
+100% ending point
+

@@ -1,0 +1,5 @@
+line-height:1.7;
+
+means line height 1.7 bigger than the font-size used for that element.
+Use it in body and all elements will have appropriate line height
+

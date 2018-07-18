@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <style type="text/css">
+
+body {background-color: #ccc;}
+
+.header {
+
+height:100vh;
+background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8),rgba(40,180,133,0.8)), url('city.jpg');
+background-size:cover;
+background-position:top;
+/*clip-path: polygon(x y, x y, x y, x y);*/
+clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+position: relative;
+
+}
+
+.txt-box {
+  
+  position: absolute; top: 50%; left:50%; 
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+  display: inline-block; 
+  text-align: center; color: #fff;
+
+}
+
+.txt-box h1 {font-weight: bold; font-size: 60px;}
+.txt-box h1, h6 {letter-spacing: 4px; clear:both;}
+.txt-box h6 {letter-spacing: 7px; font-size: 26px;}
+  
+/*button*/  
+.btn, .btn:hover, .btn:active, .btn:focus, .btn:visited {
+  border: none;
+  color:#666;
+  display:inline-block;
+  transition: all 0.2s ease-in-out;
+  background-image: linear-gradient(to right bottom, rgba(256,256,256,0.9),rgba(256,256,256,0.7)) !important;
+}    
+
+.btn {
+  border-radius: 26px; 
+  padding:10px 40px; 
+  transform: translateY(10px);
+  box-shadow: none;
+ }
+
+ .btn:focus, .btn:hover {
+    transform: translateY(8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+ }
+
+ .btn:active {
+    transform: translateY(9px);
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+ }
+
+
+
+
+
+
+.fadeInFromLeft {
+  animation: fadeInFromLeft 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeInFromLeft {
+  /*start animation ** starting point*/
+  /*0% time frame - 80% time frame & 100% time frame*/
+  0% {
+    opacity:0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  /*end animation*/
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+.fadeInFromRight {
+  animation: fadeInFromRight 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity:0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+.fadeInFromBottom {
+  animation: fadeInFromBottom 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity:0;
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="txt-box">
+    <h1 class="fadeInFromLeft">OUTDOORS</h1>
+    <h6 class="fadeInFromRight">LIFE HAPPENS HERE</h6>
+    <a href="#" class="btn fadeInFromBottom">LEARN MORE</a>
+  </div>  
+</header>
+
+<br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Animating Text</h3>
+        <p>
+Short for<br>
+  animation-name: fadeInFromLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  <br>
+  is<br>
+animation: fadeInFromLeft 0.8s ease-in-out;
+<br>
+To avoid jerky animation, use<br>
+backface-visibility: hidden;
+<br>
+@keyframes fadeInFromLeft { ... }
+<br>Start of animation<br>
+  0% {opacity:0; transform: translateX(-100px); }
+  <br>
+End of animation<br>
+  100% {opacity:1; transform: translateX(0px); }
+
+        </p>
+      </div>
+      <div class="col-md-12">
+
+        <textarea rows="6" class="form-control">
+.fadeInFromLeft {
+  /*
+  animation-name: fadeInFromLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  */
+  animation: fadeInFromLeft 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeInFromLeft {
+  /*start animation ** starting point*/
+  /*0% time frame - 80% time frame & 100% time frame*/
+  0% {
+    opacity:0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  /*end animation*/
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+
+}
+        </textarea>
+
+      </div>
+    </div>
+    <!--.row ends-->
+
+<br><br>
+
+
+  </div>
+  <!--.container ends-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.btn').click(function(event){
+        event.preventDefault();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <style type="text/css">
+
+body {background-color: #ccc;}
+
+.header {
+
+height:100vh;
+background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8),rgba(40,180,133,0.8)), url('city.jpg');
+background-size:cover;
+background-position:top;
+/*clip-path: polygon(x y, x y, x y, x y);*/
+clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+position: relative;
+
+}
+
+.txt-box {
+  
+  position: absolute; top: 50%; left:50%; 
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+  display: inline-block; 
+  background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)); 
+  padding: 20px; text-align: center; color: #fff;
+}
+
+.txt-box h1 {font-weight: bold;}
+.txt-box h1, h6 {letter-spacing: 4px;}
+.txt-box h6 {letter-spacing: 6px;}
+    
+  </style>
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="txt-box">
+    <h1>OUTDOORS</h1>
+    <h6>LIFE HAPPENS HERE</h6>
+  </div>  
+</header>
+
+<br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Text Center / Middle, the Right Way</h3>
+        <p>
+
+position absolute is relative to parent container.
+<br>
+position: absolute; top: 50%; left:50%;
+<br>
+but <b>transform is relative to text-box itself</b> - it shifts itself 50% left and 50% from its own position.
+<br>
+transform: translate(-50%, -50%);
+
+        </p>
+      </div>
+      <div class="col-md-12">
+
+        <textarea rows="6" class="form-control">
+display: inline-block;
+position: absolute; top: 50%; left:50%; 
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+        </textarea>
+
+      </div>
+    </div>
+    <!--.row ends-->
+
+<br><br>
+
+  </div>
+  <!--.container ends-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+animation-name: fadeInFromLeft;
+animation-duration: 0.8s;
+animation-timing-function: ease-out;
+
+animation-delat: 1s;
+animation-iteration-count:3; /*three times*/
+
+animation-timing-function: ease-in;
+animation-timing-function: ease-in-out;
+animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+
+
+animation-timing-function
+=========================
+https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
+
+http://cubic-bezier.com/#.17,.67,.83,.67
+https://easings.net/
+
+
+Short for
+==========
+.fadeInFromLeft {
+animation-name: fadeInFromLeft;
+animation-duration: 0.8s;
+animation-timing-function: ease-in-out;
+}
+use this
+==
+.fadeInFromLeft {
+animation: fadeInFromLeft 0.8s ease-in-out;
+}
+
+
+
+/*fix for shaky animation*/
+  backface-visibility: hidden;
+

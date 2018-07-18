@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <style type="text/css">
+
+body {background-color: #ccc;}
+
+.header {
+
+height:100vh;
+background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8),rgba(40,180,133,0.8)), url('city.jpg');
+background-size:cover;
+background-position:top;
+/*clip-path: polygon(x y, x y, x y, x y);*/
+clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+    
+  </style>
+
+</head>
+
+<body>
+
+<header class="header">
+  
+</header>
+
+<br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Background Image & Clip Path</h3>
+        <p>http://bennettfeely.com/clippy/</p>
+        <p>clip-path: polygon(x y, x y, x y, x y);</p>
+      </div>
+      <div class="col-md-12">
+
+        <textarea rows="6" class="form-control">
+height:100vh;
+background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8),rgba(40,180,133,0.8)), url('city.jpg');
+background-size:cover;
+background-position:top;
+/*clip-path: polygon(x y, x y, x y, x y);*/
+clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        </textarea>
+
+      </div>
+    </div>
+    <!--.row ends-->
+
+<br><br>
+
+  </div>
+  <!--.container ends-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
