@@ -1,0 +1,32 @@
+rem is realtive unit and its root based
+
+
+body {font-size:16px;}
+h1 {font-size:1.5 rem;}
+p {font-size:1rem;}
+
+1.5rem = 1.5 * 16px = 24px;
+
+rem is root font size based unit for children.
+root font size is body font size.
+
+===================================
+
+
+em is x * parent font size
+em is not root based.
+
+If a div has 16px font size
+- div h1 can heva 1.5em font size > 1.5 * 16 = 24px
+- div p can have 1em font size > 16px
+
+====================================
+
+for font > reference is the parent
+for length (width, height, padding, margins) > reference is element itself
+
+if a div has 2em padding - it means its 2 * its font size
+If its font-size is 150px and body has 16px font than its font size = 24px
+and padding will be 24 * 2 = 48px
+
+REM vs EM - Root vs Parent - Relative/Reference units. At the end everything converts to px.

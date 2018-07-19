@@ -1,0 +1,14 @@
+.parent {
+font-size: 20px;
+line-height: 150%;      <<< 30px
+}
+
+.child {
+ font-size: 25px;
+}
+
+The inherited line-height value for child will be 30px; from parent
+
+
+
+
