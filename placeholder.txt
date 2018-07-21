@@ -1,0 +1,43 @@
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+.form-control:-moz-placeholder {
+    color: #fff;
+}
+.form-control:-ms-input-placeholder {
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control::-moz-placeholder {
+    color: #fff;
+}
+
+
+
+dont mix these styles like .class1, .class2, .class3 { ... }
+won't work ... :)
+don't mix the vendor prefix selectors (-moz, -webkit, -ms, ...). Chrome for example won't understand "-moz-" and then ignores the whole selector.
+
+
+
+::-webkit-input-placeholder {
+    color:red;
+}
+
+::-moz-placeholder {
+    color:red;
+}
+
+::-ms-placeholder {
+    color:red;
+}
+
+::placeholder {
+    color:red;
+}
+
+
