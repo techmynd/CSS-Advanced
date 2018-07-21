@@ -30,3 +30,23 @@ If its font-size is 150px and body has 16px font than its font size = 24px
 and padding will be 24 * 2 = 48px
 
 REM vs EM - Root vs Parent - Relative/Reference units. At the end everything converts to px.
+
+
+
+if 
+html > font-size: 10px;
+
+30px > 30/10 = 3rem
+16px > 16/10 = 1.6rem
+20px > 20/10 = 2rem
+24px > 24/10 = 2.4rem
+
+all px units can be converted
+
+line-height:1.7; will not be converted coz its already a relational/relative unit
+
+
+use html font-size as 100% that will be equal to 16px set by browser as default.
+
+
+rem is not supported by ie9

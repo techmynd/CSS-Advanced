@@ -22,3 +22,10 @@ height + padding + border = actual height of an element
 Include padding and border in the element's total width and height.
 
 
+*, *:before, *:after {
+  font-smooth: always; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  margin:0; padding:0; 
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
