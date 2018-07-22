@@ -1,0 +1,13 @@
+attribute selector
+==================
+
+.parent-class [class^=col-] {color: red}
+
+[class*='col-']
+[class*=col-]
+
+.parent-class [class~=col] {color:red; }
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
