@@ -1,0 +1,20 @@
+
+<div class="wrap">
+<h1>some heading</h1>
+<a href="#">link name</a>
+<a href="#">link name</a>
+<a href="#">link name</a>
+</div>
+
+
+For above first child will not work bcoz first child in .wrap is h1
+Here first of type will be used to select first 
+
+wrong
+=====
+.wrap a:first-child
+
+correct
+=======
+.wrap a:first-of-type
+
