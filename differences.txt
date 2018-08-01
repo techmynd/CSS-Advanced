@@ -1,0 +1,10 @@
+difference between : and ::
+===========================
+
+: is for state like a:hover
+
+:: is for inserted elements or elemets that do not exist in DOM
+
+https://stackoverflow.com/questions/8069973/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-in-css
+
+===========================
