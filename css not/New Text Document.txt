@@ -1,0 +1,24 @@
+not last child
+================
+.row {background-color: #eee;}
+
+implement margin on row but not on last row
+
+.row:not(:last-child) {margin-right: 20px;}
+
+=====================
+
+
+scss
+====
+
+.row { 
+	background-color: #eee;
+ 
+	&:not(:last-child) {
+  		margin-right:20px;	
+ 	}
+}
+
+
+
