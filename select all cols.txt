@@ -21,3 +21,24 @@ tested
 
 }
 
+
+=================================
+
+
+
+// all elements in which class starts with col-
+// class^="col-" >> all classes that start with col-
+// class*="col-" >> all classes that contain col-
+// class$="col-" >> all classes that end with col-
+
+	[class^="col-"] {
+		background-color: #000;
+		color: #fff;
+		float: left;
+		padding: 15px;		
+
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
