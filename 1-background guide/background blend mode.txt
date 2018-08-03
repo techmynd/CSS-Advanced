@@ -1,0 +1,12 @@
+.image {
+
+background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(city.jpg);
+
+background-size: cover;
+background-blend-mode: screen;
+
+}
+
+
+
+

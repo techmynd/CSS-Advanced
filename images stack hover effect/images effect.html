@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <style type="text/css">
+
+  .img-stack img {
+  	position: absolute; 
+  	width:50%; 
+  	box-shadow:0 1.5rem 4rem rgba(0,0,0,0.5);
+  	transition: all 0.3s ease-in-out;
+  	z-index: 1;
+  	outline-offset: 10px;
+  	/*outline: 0px solid #000;*/
+  }
+  .img-stack img:hover {
+  	transform: scale(1.05) translateY(-10px);
+  	z-index: 2;
+  	outline: 10px solid #000;
+  }
+
+  .img-stack:hover img:not(:hover) {
+  	transform: scale(0.95);
+  }
+
+  .img-stack .img-1 {top:0; left: 0;}
+  .img-stack .img-2 {top:80px; left: 300px;}
+  .img-stack .img-3 {top:200px; left: 120px;}
+
+  </style>
+
+</head>
+<body>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Images effect</h3>
+        </div>
+        
+        <div class="col-md-12 img-stack">
+
+          
+         <img src="city.jpg" class="img-1">
+         <img src="city.jpg" class="img-2">
+         <img src="city.jpg" class="img-3">
+
+
+        </div>
+
+      </div><!--.row ends-->
+      <br><br>
+    </div><!--.container ends-->
+        
+
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

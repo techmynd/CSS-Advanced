@@ -1,0 +1,8 @@
+apply this at span and use padding or width and text in new line will look like in a new element.
+Good to use in case u dont want extra elements for text to break into lines.
+
+
+box-decoration-break: clone;
+-webkit-box-decoration-break: clone;
+
+
