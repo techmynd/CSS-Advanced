@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <style type="text/css">
+
+.header {
+
+height:95vh;
+background-image: 
+  linear-gradient(105deg, 
+  rgba(255,255,255,0.9) 0%, 
+  rgba(255,255,255,0.9) 50%, 
+  transparent 50%),
+  url('city.jpg');
+background-size:cover;
+background-position:top;
+
+}
+    
+  </style>
+
+</head>
+
+<body>
+
+<header class="header">
+  <div style="width:40%; padding:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem minus dolorum ab labore quisquam quos accusamus nulla cupiditate nemo ipsum. Cupiditate officia saepe maxime hic incidunt reprehenderit impedit enim? Nemo modi eius consequuntur nobis natus ex dignissimos dolorum magnam distinctio dicta suscipit, enim fugit tenetur reprehenderit rerum vel, itaque aliquid nesciunt ea beatae non, placeat deserunt soluta quo. At odio quisquam natus modi magni id eius cupiditate cum a reprehenderit, aliquam repudiandae, quos nihil officia quam suscipit repellat, ratione ex voluptatum est assumenda distinctio, totam impedit. At iste rem commodi deserunt, maxime voluptatibus animi distinctio impedit et consequuntur expedita eaque doloremque laboriosam placeat dolorem consectetur, ab inventore nesciunt porro. Asperiores voluptatem natus recusandae dolorem, doloremque reiciendis! Itaque ex eaque porro, eum odio commodi nihil laborum dolores blanditiis! Voluptates vitae architecto dicta iusto non labore tempore, soluta unde atque suscipit deleniti magni tenetur modi veniam natus totam iure sunt eaque minima, deserunt aspernatur esse, quia aut! Deleniti, alias, inventore sit unde natus voluptas asperiores autem obcaecati perspiciatis, nostrum saepe. Hic ut dolorum neque, minus minima quis iusto maxime omnis eaque aut magni quod, culpa mollitia similique, accusantium quae velit? Ratione enim recusandae pariatur doloribus modi velit sunt id natus suscipit quod.</div>
+</header>
+
+<br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Background Image, Color and Gradient with Less Code</h3>
+        <p>This technique is for two gradients from same color variation. In case you want the background color feel according to your color main theme.</p>
+        <p>Linear Gradient > to right bottom<br>
+        background: linear-gradient(to right bottom, rgba(126,213,111,0.8),rgba(40,180,133,0.8));
+        </p>
+        <p>Linear Gradient > top to bottom > frist value will be for top.
+        background: linear-gradient(red, yellow);
+        </p>
+        <p>Linear Gradient > to right >> starting point from left will be red<br>
+        background: linear-gradient(to right, red , yellow);
+        </p>
+        <p>Linear Gradient > Angle<br>
+        background: linear-gradient(-90deg, red, yellow);
+        </p>
+        <p>More colors<br>background: linear-gradient(red, yellow, green);</p>
+        <br><br>
+        <p>background: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+        <br><br>
+        <p>Radial gradient > red will be in center<br>
+        background: radial-gradient(red, yellow);
+        </p>
+        <p>Raidial gradient in percentage > red will be in center<br>
+        background: radial-gradient(red 10%, yellow 90%);
+        </p>
+        <p>Radial Circular Gradient<br>
+        background: radial-gradient(circle, red, yellow);
+        </p>
+      </div>
+      <div class="col-md-12">
+
+        <textarea rows="6" class="form-control">
+background-image: linear-gradient(105deg, 
+  rgba(255,255,255,0.9) 0%, 
+  rgba(255,255,255,0.9) 50%, 
+  transparent 50%),
+  url('city.jpg');
+        </textarea>
+
+      </div>
+    </div>
+    <!--.row ends-->
+
+<br><br>
+
+  </div>
+  <!--.container ends-->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
