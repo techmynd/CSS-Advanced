@@ -1,0 +1,50 @@
+
+container
+=========
+
+flex-direction: row;
+row / column / row-reverse / column-reverse
+
+flex-wrap: nowrap;
+wrap / wrap-reverse
+
+justify-content: flex-start;
+flex-end / center / space between / space around / space evenly
+
+align-items: stretch;
+flex-start / flex-end / center / baseline
+
+
+
+item
+======
+
+align-self: auto;
+stretch / flex-start / flex-end / center / baseline
+
+order: 0;
+1 / 2 / 3
+
+
+flex-grow: 0;
+1 / 2 / 3
+
+flex-shrink: 1;
+1 / 2 / 3
+
+flex-basis: auto;
+length
+
+
+---------------
+flex: 0 1 auto;
+flex: flex-grow + flex-shrink + flexbasis;
+---------------
+
+
+
+
+
+
+
+
