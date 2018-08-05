@@ -12,7 +12,7 @@
 
   * {margin:0; padding:0; box-sizing: border-box;}
   .flex-wrap {background-color:#ccc; padding:10px;}
-  .flex-item {background-color:#f1425d; padding:40px; margin:20px; color:#fff; font-size:40px;}
+  .flex-item {background-color:#f1425d; padding:40px; color:#fff; font-size:40px;}
 
 
 
@@ -22,8 +22,12 @@
   	flex-wrap: wrap;
   }
   .flex-item {
-
+  	flex-basis: 23%;
+  	margin:1%;
+  	display: flex;
+  	justify-content: center; /*center content*/
   }
+
   </style>
 
 </head>
@@ -37,20 +41,36 @@
     	<div class="flex-item">2</div>
     	<div class="flex-item">3</div>
     	<div class="flex-item">4</div>
-    	<div class="flex-item">5</div>
+    	<div class="flex-item">1</div>
+    	<div class="flex-item">2</div>
+    	<div class="flex-item">3</div>
+    	<div class="flex-item">4</div>
+    	<div class="flex-item">1</div>
+    	<div class="flex-item">2</div>
+    	<div class="flex-item">3</div>
+    	<div class="flex-item">4</div>
+    	<div class="flex-item">1</div>
+    	<div class="flex-item">2</div>
+    	<div class="flex-item">3</div>
+    	<div class="flex-item">4</div>
     </div>
 
 
 <br><br>
+<h3>Custom Flex Grid + Flex Wrap // Flex Wrap is necessary to shift columns down if space is not enough</h3>
+<br><br>
 
-<textarea rows="10" class="form-control">
+<textarea rows="14" class="form-control">
 .flex-wrap {
   	display: flex;
   	flex-direction: row;
   	flex-wrap: wrap;
   }
   .flex-item {
-
+  	flex-basis: 23%;
+  	margin:1%;
+  	display: flex;
+  	justify-content: center; /*center content*/
   }
 </textarea>
 		
