@@ -10,13 +10,13 @@ break points
 600
 
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 }
 
@@ -30,7 +30,7 @@ break points
 
 =========================
 @mixin respond-phone {
- @media (max-width: 600px) { @content };
+ @media only screen and (max-width: 600px) { @content };
 }
 
 
@@ -47,19 +47,19 @@ body {
 @mixin respond($breakpoint) {
 
 @if $breakpoint == phone {
- @media (max-width: 600px) { @content };
+ @media only screen and (max-width: 600px) { @content };
 }
 
 @if $breakpoint == tab-port {
- @media (max-width: 900px) { @content };
+ @media only screen and (max-width: 900px) { @content };
 }
 
 @if $breakpoint == tab-land {
- @media (max-width: 1200px) { @content };
+ @media only screen and (max-width: 1200px) { @content };
 }
 
 @if $breakpoint == desktop {
- @media (min-width: 1800px) { @content };
+ @media only screen and (min-width: 1800px) { @content };
 }
 
 }
