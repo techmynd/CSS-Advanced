@@ -1,0 +1,84 @@
+break points
+============
+
+1200
+
+
+900
+
+
+600
+
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+
+}
+
+
+
+0 - 600px > phone
+600 - 900px > tablet portrait
+900 - 1200px > tablet landscape
+1200 - 1800px > desktop
+1800 - + > 
+
+=========================
+@mixin respond-phone {
+ @media (max-width: 600px) { @content };
+}
+
+
+body {
+
+  font-size: 20px;
+
+  @include respond-phone {
+     font-size: 16px;	
+  }
+}
+==========================
+
+@mixin respond($breakpoint) {
+
+@if $breakpoint == phone {
+ @media (max-width: 600px) { @content };
+}
+
+@if $breakpoint == tab-port {
+ @media (max-width: 900px) { @content };
+}
+
+@if $breakpoint == tab-land {
+ @media (max-width: 1200px) { @content };
+}
+
+@if $breakpoint == desktop {
+ @media (min-width: 1800px) { @content };
+}
+
+}
+
+
+
+body {
+
+  font-size: 20px;
+
+  @include respond(phone) {
+     font-size: 16px;	
+  }
+
+  @include respond(desktop) {
+     font-size: 16px;	
+  }
+}
+
+
+
+see sass folder with em units instead of px

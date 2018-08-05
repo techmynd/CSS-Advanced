@@ -1,0 +1,31 @@
+background-color: rgba(0,0,0,0.8);
+
+
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+background-color: rgba(0,0,0,0.3);
+
+}
+
+if browser supports blur, blur will be applied and bg will will less
+if not, regular bg black with 0.8 opacity will be applied and blur will be ignored
+
+==========================
+
+
+@supports () {
+
+}
+
+===========================
+
+@supports (property: value) {
+
+property: value
+
+}
+
+
+

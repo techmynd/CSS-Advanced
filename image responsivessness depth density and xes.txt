@@ -1,0 +1,60 @@
+Use srcset instead of src
+
+<img src="img.jpg">
+
+<img srcset="img-1.jpg 300w, img-1-large.jpg 1000w"
+sizes="(max-width: 900px;) 20vw, (max-width: 600px;) 30vw, 300px"
+src="img-1.jpg">
+
+or
+
+<img srcset="img-1.jpg 1x, img-1-large.jpg 2x" src="img-1.jpg">
+
+
+
+different images for different dpi or resolution
+=================================================
+
+small image as default but large image for resolution greater than 192dpi
+
+192dpi is mobile resoluion for idevices
+====================================================
+
+.header {	
+	background-image: url('small-image.jpg');
+}
+
+
+
+@media (min-resolution: 192dpi) and (min-width: 600px) {
+	.header {	
+		background-image: url('large-image.jpg');
+	}
+}
+
+======================================================
+
+safari support
+=================
+, is 'or' below and a37.5em is equal to 600px
+
+
+
+@media (min-resolution: 192dpi) and (min-width: 37.5em),  
+	@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), 
+        (min-width: 125em)
+	{
+	.header {	
+		background-image: url('large-image.jpg');
+	}
+}
+
+
+
+
+
+
+
+
+
+
