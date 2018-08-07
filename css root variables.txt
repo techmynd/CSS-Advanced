@@ -1,0 +1,15 @@
+for css
+=========
+
+
+<style>
+:root {
+	--primary-color: #000;
+	--secondary-color: #eee;
+}
+
+body {
+	color: var(--primary-color);
+}
+</style>
+

@@ -1,0 +1,76 @@
+
+requires server to run
+----------------------
+sprite.svg contains icons and icon-cart is the icon name here 
+
+<svg class="class-name">
+<use xlink:href="assets/images/icons/sprite.svg#icon-cart"></use>
+</svg>
+
+
+
+use 
+https://github.com/jonathantneal/svg4everybody
+
+
+
+
+
+<img class="papa" src="https://s.cdpn.io/3/kiwi.svg">
+
+
+if (!Modernizr.svg) {
+  $(".logo img").attr("src", "images/logo.png");
+}
+
+
+
+
+<img src="image.svg" onerror="this.onerror=null; this.src='image.png'">
+
+
+
+
+as bg image - use exact width and height
+====================================
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url(kiwi.svg);
+  background-size: 100px 82px;
+  
+}
+
+
+use 
+background-size: contain;
+
+
+
+
+body {
+  background: url(fallback.png);
+  background-image: url(image.svg), none;
+}
+
+
+
+width php
+=========
+<?php echo file_get_contents("kiwi.svg"); ?>
+
+
+
+<object type="image/svg+xml" data="kiwi.svg" class="logo">
+  Kiwi Logo <!-- fallback image in CSS -->
+</object>
+
+
+
+
+
+
+
+
