@@ -1,0 +1,41 @@
+.btn4 {
+
+	display: inline-block;
+	background-color: orangered;
+	color: #fff;
+	padding: 1rem 5rem;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.3rem;
+	font-size: 1rem;
+	height: 2.5rem;
+
+	&:hover, &:focus, &:active {
+		color: #fff;
+	}
+
+	&__visible, &__hidden {
+		position: absolute; 
+		top: 50%; left: 50%;
+		transition: all .3s ease;
+		-webkit-transition: all .3s ease;
+	}
+
+	&__visible {
+		transform: translate(-50%,-50%);
+	}
+
+	&__hidden {
+		transform: translate(-50%,-200%);
+	}
+
+	&:hover &__visible, &:focus &__visible {
+		transform: translate(-50%,200%);
+	}
+
+	&:hover &__hidden, &:focus &__hidden {
+		transform: translate(-50%,-50%);
+	}
+	
+}

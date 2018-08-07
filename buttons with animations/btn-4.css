@@ -1,0 +1,29 @@
+.btn4 {
+  display: inline-block;
+  background-color: orangered;
+  color: #fff;
+  padding: 1rem 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  height: 2.5rem; }
+  .btn4:hover, .btn4:focus, .btn4:active {
+    color: #fff; }
+  .btn4__visible, .btn4__hidden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease; }
+  .btn4__visible {
+    transform: translate(-50%, -50%); }
+  .btn4__hidden {
+    transform: translate(-50%, -200%); }
+  .btn4:hover .btn4__visible, .btn4:focus .btn4__visible {
+    transform: translate(-50%, 200%); }
+  .btn4:hover .btn4__hidden, .btn4:focus .btn4__hidden {
+    transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=btn-4.css.map */

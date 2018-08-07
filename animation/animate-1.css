@@ -1,0 +1,24 @@
+.animate {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  padding: 10px;
+  border: 1px solid #eee; }
+  .animate:focus, .animate:hover {
+    animation: pulsate 1s infinite;
+    -webkit-animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    box-shadow: none; } }
+
+/*# sourceMappingURL=animate-1.css.map */

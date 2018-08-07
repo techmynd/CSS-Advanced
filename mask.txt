@@ -1,0 +1,7 @@
+background-color: #000;
+mask-image: url('image.svg'); 
+-webkit-mask-image: url('image.svg'); 
+mask-size: cover;
+-webkit-mask-size: cover;
+
+

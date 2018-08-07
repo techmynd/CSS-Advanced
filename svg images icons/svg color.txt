@@ -1,0 +1,3 @@
+fill: #000;
+
+use fill property
