@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CSS Flex</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <style type="text/css">
+
+  html{height:100%;}
+  * {margin:0; padding:0; box-sizing: border-box;}
+  body {
+  	height:100%;
+  	background-image: linear-gradient(to right bottom, #333,#000);
+  	padding: 40px;
+  }
+
+  .box-wrap {
+    width: 80%; 
+    margin: 0 auto; 
+    background-color: #fff; 
+    color: #000; 
+    height: 200px; 
+    padding:20px; 
+    text-align: center; 
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .logo-area {
+    background-color: orangered;
+    align-self: stretch;
+    display: flex;
+    align-items:center;
+  }
+
+  .links {
+    background-color: yellowgreen;
+    align-self: stretch;
+    display: flex;
+    align-items:center;
+    flex: 1;
+  }
+
+  .links a {
+    margin:10px;
+    flex: 1;
+  }
+
+  </style>
+
+</head>
+<body>
+
+    
+<br><br>
+
+  <div class="box-wrap">
+
+
+  <div class="logo-area">
+      LOGO
+    </div>
+    
+    <div class="links">
+      <a href="#">Some Link</a>
+      <a href="#">Some Link</a>
+      <a href="#">Some Link</a>
+      <a href="#">Some Link</a>
+    </div>
+
+    
+
+  </div>
+
+<br><br>
+
+<textarea rows="10" class="form-control">
+.box-wrap { 
+display: flex;  flex-direction: row; align-items: center; 
+justify-content: space-between; //<<<
+}
+
+.logo-area { 
+align-self: stretch; //<<<
+display: flex; 
+align-items:center; //<<<
+}
+.links { align-self: stretch; display: flex; align-items:center; 
+flex: 1; //<<<
+}
+.links a { flex: 1; //<<<}
+</textarea>
+		
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+  
+</body>
+</html>

@@ -1,0 +1,11 @@
+flex: 1;
+occupy all available space
+
+=============================
+
+display: flex;
+margin-right: auto;
+
+fill all rightside empty space with margin
+
+=============================
