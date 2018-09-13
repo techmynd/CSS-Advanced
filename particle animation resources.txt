@@ -1,0 +1,15 @@
+particles and text effects
+===========================
+https://codepen.io/enricotoniato/pen/gbzJYO
+https://codepen.io/plasm/pen/zwjMPy
+
+
+https://medium.freecodecamp.org/what-to-learn-in-2017-if-youre-a-frontend-developer-b6cfef46effd
+https://frontendtools.com/
+https://uptodate.frontendrescue.org/
+https://toddmotto.com/
+https://tympanus.net/codrops/
+https://css-tricks.com/super-power-grid-components-with-css-custom-properties/
+https://css-tricks.com/
+https://speckyboy.com/
+https://medium.com/front-end-hacking
