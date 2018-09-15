@@ -1,0 +1,8 @@
+pointer-events: none;
+
+
+
+inverted circle filled 
+
+https://stackoverflow.com/questions/26401442/how-to-make-an-inverse-transparent-circle-in-css
+http://jsbin.com/nugog/1/edit?html,css,output
